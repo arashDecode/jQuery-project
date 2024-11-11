@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/7f00b22dc1.js" crossorigin="anonymous"></script>
+        <title>My jQuery Project</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Open+Sans:ital,wght@0,300..800;1,300..800&
+        family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--jQuery Plugins CSS-->
+        <link rel="stylesheet" href="Owl Carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="Owl Carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="Responsive Tabs/responsive-tabs.css">
+        <link rel="stylesheet" href="Magnific Popup/magnific-popup.css">
+
+        <!--Scroll Spy Plugin CSS-->
+        <link rel="stylesheet" href="ScrollSpy/ScrollSpy.css">
+
+        <!--Animate CSS-->
+        <link rel="stylesheet" href="wow.js/animate.css">
+        
+        <link rel="stylesheet" href="My jQuery Project CSS.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js "></script>
+    </head>
+
+    <body>
+        <!-- <div id="preloader">
+            <div id="status"></div>
+        </div> -->
+
+        <div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+		</div>
+
+        <section id="home" class="scrollspy" spy-title="HOME">
+            <div id="scroll"></div>
+            <div class="nav-wrapper">
+                <div class="nav-btn" id="side-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+                <div class="logo">
+                    <span class="spn-colored"><b>S</b></span>
+                    <span class="un-colored"><b>O</b></span>
+                    <span class="spn-colored"><b>L</b></span>
+                    <span class="un-colored"><b>O</b></span>
+                </div>
+
+                <div id="indicator">
+                    <ul class="menu-items">
+                        <li>
+                            <a href="#home" class="smooth-scroll">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="smooth-scroll">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#team-section" class="smooth-scroll">TEAM</a>
+                        </li>
+                        <li>
+                            <a href="#services-section" class="smooth-scroll">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#work-section" class="smooth-scroll">WORK</a>
+                        </li>
+                        <li>
+                            <a href="#clients-section" class="smooth-scroll">CLIENTS</a>
+                        </li>
+                        <li>
+                            <a href="#contact-section" class="smooth-scroll">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <ul class="nav-menu-items" id="side-nav">                                                           
+                    <li><a href="#home" class="mobLinks first smooth-scroll">HOME</a></li>
+                    <li><a href="#about" class="mobLinks second smooth-scroll">ABOUT</a></li>
+                    <li><a href="#team-section" class="mobLinks third smooth-scroll">TEAM</a></li>
+                    <li><a href="#services-section" class="mobLinks fourth smooth-scroll">SERVICES</a></li>
+                    <li><a href="#work-section" class="mobLinks fifth smooth-scroll">WORK</a></li>
+                    <li><a href="#clients-section" class="mobLinks sixth smooth-scroll">CLIENTS</a></li>
+                    <li><a href="#contact-section" class="mobLinks seventh smooth-scroll">CONTACT US</a> </li>
+                </ul>
+            </div>
+
+            <video id="home-bg-video" poster="video/solo.jpg" autoplay loop muted>
+                <source src="video/solo.mp4" type="video/mp4">
+                <source src="video/solo.ogv" type="video/ogg">
+                <source src="video/solo.webm" type="video/webm">
+            </video>
+
+            <div class="home-overlay"></div>
+
+            <div class="home-contents">
+                <div class="home-content">
+                    <div class="home-title">
+                        <h1 id="home-title">Digital <br> Creative <span>Agency</span></h1>
+                    </div>
+    
+                    <div class="home-txt" id="typed-strings">
+                        <p>Marketing becomes a lot more effective when you can predict your target’s behavior.</p>
+                    </div>
+                    <span id="typed"></span>
+    
+                    <div class="home-btn">
+                        <!-- <a href="#">Start Now</a> -->
+                        <button class="contact-btn">
+                            <span class="glow"></span>
+                            <span class="contact-btn-content">START NOW</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="scrollspy" spy-title="ABOUT">
+            <div class="page-container">
+                <div class="about-content">
+                    <div class="about-content-left wow animate__fadeInLeftBig">
+                        <h5>WHO &nbsp; WE &nbsp; ARE</h5>
+                        <h2>A <strong>Story</strong> <br> About Us</h2>
+                    </div>
+                    
+                    <div class="about-content-right wow animate__fadeInRightBig">
+                        <p>Everything we do is inspired by our collective passion for connectivity,
+                            conversation and innovation.
+                        </p>
+                        <p>Defining the key habits and cultural details about your audience, 
+                            And then acting on them to solve your business challenges.
+                        </p>
+                        
+                        
+                    </div>
+                </div>
+                <div class="about-img wow animate__fadeIn">
+                    <img src="img/about/about.png" alt="">
+                </div>
+
+                
+            </div>
+
+            <div class="about-bottom">
+                <div class="about-bottom-cols">
+                    <div class="col wow animate__fadeInLeft">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Mission</h3>
+                        <p>The art of connecting websites & e-shops with their clients! Based on a detailed marketing plan
+                            according to the competition, we create digital campaigns ensuring maximum budget revenue.
+                        </p>
+                    </div>
+                    
+                    <div class="col wow animate__fadeInUp">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3>Vision</h3>
+                        <p>Combining vital functionalities with a modern interface is our way to ensuring optimal user experience And
+                            maximize the performance of your website.
+                        </p>
+                    </div>
+                    
+                    <div class="col wow animate__fadeInRight">
+                        <i class="fa-solid fa-pencil"></i>
+                        <h3>Passion</h3>
+                        <p>Through extensive market analysis, detailed data collection, and creative ideas, our team
+                            follows a holistic approach to build your brand’s identity. We want our clients to
+                            stand out and be unique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team-section" class="scrollspy" spy-title="TEAM">
+            <div class="page-container">
+                <div class="team-content">
+                    <div class="team-title wow animate__slideInLeft">
+                        <h5>WHO WE ARE</h5>
+                        <h2>Meet Our <br><strong> Talented</strong> Team</h2>
+                        
+                    </div>
+                    <!-- <div class="team-text">
+                        <p>We’re here because the world keeps speeding up, creating an ever-widening
+                            gap between who you are, and who you need to reach.
+                       </p>
+                    </div> -->
+
+                    <div id="team-members" class="owl-carousel owl-theme team-members  wow animate__slideInRight">
+                        <div class="team-member" id="team-member">
+                            <img src="img/team/team-1.jpg" alt="">
+                            <div class="team-member-overlay">
+                                <div class="team-member-info">
+                                    <h6>Kevin Greer</h6>
+                                    <p>Web Designer</p>
+                                    <ul class="social-list">
+                                        <li><i class="fa-brands fa-facebook"></i></li>
+                                        <li><i class="fa-brands fa-twitter"></i></li>
+                                        <li><i class="fa-brands fa-google"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member" id="team-member">
+                            <img src="img/team/team-2.jpg" alt="">
+                            <div class="team-member-overlay">
+                                <div class="team-member-info">
+                                    <h6>Christian Cilinis</h6>
+                                    <p>Web Designer</p>
+                                    <ul class="social-list">
+                                        <li><i class="fa-brands fa-facebook"></i></li>
+                                        <li><i class="fa-brands fa-twitter"></i></li>
+                                        <li><i class="fa-brands fa-google"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member" id="team-member">
+                            <img src="img/team/team-3.jpg" alt="">
+                            <div class="team-member-overlay">
+                                <div class="team-member-info">
+                                    <h6>Andrea Arkov</h6>
+                                    <p>Web Designer</p>
+                                    <ul class="social-list">
+                                        <li><i class="fa-brands fa-facebook"></i></li>
+                                        <li><i class="fa-brands fa-twitter"></i></li>
+                                        <li><i class="fa-brands fa-google"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member" id="team-member">
+                            <img src="img/team/team-4.jpg" alt="">
+                            <div class="team-member-overlay">
+                                <div class="team-member-info">
+                                    <h6>Harold Houdini</h6>
+                                    <p>Web Designer</p>
+                                    <ul class="social-list">
+                                        <li><i class="fa-brands fa-facebook"></i></li>
+                                        <li><i class="fa-brands fa-twitter"></i></li>
+                                        <li><i class="fa-brands fa-google"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member" id="team-member">
+                            <img src="img/team/team-5.jpg" alt="">
+                            <div class="team-member-overlay">
+                                <div class="team-member-info">
+                                    <h6>Angela Perry</h6>
+                                    <p>Web Designer</p>
+                                    <ul class="social-list">
+                                        <li><i class="fa-brands fa-facebook"></i></li>
+                                        <li><i class="fa-brands fa-twitter"></i></li>
+                                        <li><i class="fa-brands fa-google"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member" id="team-member">
+                            <img src="img/team/team-6.jpg" alt="">
+                            <div class="team-member-overlay">
+                                <div class="team-member-info">
+                                    <h6>Kara Kulis</h6>
+                                    <p>Web Designer</p>
+                                    <ul class="social-list">
+                                        <li><i class="fa-brands fa-facebook"></i></li>
+                                        <li><i class="fa-brands fa-twitter"></i></li>
+                                        <li><i class="fa-brands fa-google"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div id="progress-elements" class="wow animate__fadeInUp">
+                    <div class="progress-bar">
+                        <div class="info">
+                            <span>Web Design</span>
+                        </div>
+                        <div class="progress-line web-des">
+                            <span style="width: 0px;" data-value="95"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="info">
+                            <span>Web Development</span>
+                        </div>
+                        <div class="progress-line web-dev">
+                            <span style="width: 0px;" data-value="95"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="info">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="progress-line photo">
+                            <span style="width: 0px;" data-value="75"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="info">
+                            <span>Digital Marketing</span>
+                        </div>
+                        <div class="progress-line dig-mar">
+                            <span style="width: 0px;" data-value="90"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="statement-section" >
+            <div class="statement-content">
+                <h3><i class="fa fa-quote-left"></i>We Design and develop services for customers of all sizes,
+                <br>specializing in creating stylish , modern websites and online stores.
+                <i class="fa fa-quote-right"></i></h3>
+            </div>
+        </section>
+
+
+        <section id="services-section" class="scrollspy" spy-title="SERVICES">
+            <div class="page-container">
+                <div class="services-section-title wow animate__zoomIn">
+                    <h5>WHAT WE DO</h5>
+                    <h2>Our Services</h2>
+                </div>
+
+                <div class="services-section-content">
+                    <div class="services-section-left wow animate__zoomInLeft">
+                        <img src="img/services/laptop-lamp.png" alt="">
+                    </div>
+                    
+                    <div class="services-section-right wow animate__zoomInRight">
+                        <div class="services-details">
+                            <div class="services-icon">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="services-text">
+                                <h5>SERVICE 01</h5>
+                                <h4>Web Design</h4>
+                                <p>Our many different skills and disciplines in the production and maintenance of websites.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="services-details">
+                            <div class="services-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="services-text">
+                                <h5>SERVICE 02</h5>
+                                <h4>Web Development</h4>
+                                <p>Including aspects such as web design, web publishing, web programming, and database management.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="services-details">
+                            <div class="services-icon">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+                            <div class="services-text">
+                                <h5>SERVICE 03</h5>
+                                <h4>Digital Marketing</h4>
+                                <p>Our Approach in promotion of brands to connect with potential customers using the
+                                    internet and other forms of digital communication.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="services-tabs">
+            <div class="page-container">
+                <div class="services-tabs-contents wow animate__zoomIn" id="responsiveTabsDemo">
+                    <ul id="tab-container" class="text-center">
+                        <li class="tab-list active-state"><a href="#tab-1">Creativity</a></li>
+                        <li class="tab-list"><a href="#tab-2">Strategy</a></li>
+                        <li class="tab-list"><a href="#tab-3">Design</a></li>
+                        <li class="tab-list"><a href="#tab-4">Development</a></li>
+                    </ul>
+
+                    <div id="tab-1" class="services-tab">
+                        <div class="container">
+                            <div class="tab-img">
+                                <img src="img/services/creativity.jpeg" alt="">
+                            </div>
+                            <div class="tab-content">
+                                <h2>01</h2>
+                                <h3>Get More From Life With Creativity.</h3>
+                                <p> Combining different elements, such as color, typography, layout, images, animation,
+                                    and interactivity, to create a unique and engaging experience for the audience.
+                                </p>
+                                <div class="services-btn">
+                                    <a href="#" class="btnn">Get in touch</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="tab-2" class="services-tab">
+                        <div class="container">
+                            <div class="tab-img">
+                                <img src="img/custom pics/strategy.png" alt="">
+                            </div>
+                            <div class="tab-content">
+                                <h2>02</h2>
+                                <h3>The Home Of Strategy.</h3>
+                                <p>Building brands from the ground up to achieve goals that matter to business. We thrive on the challenge
+                                    of developing brands that resonate with today’s culture shifts. Our strategies are built
+                                    through collaboration and conversation, and rely on culture, innovation, and creative to
+                                    push your brand forward.
+                                </p>
+                                <div class="services-btn">
+                                    <a href="#" class="btnn">Get in touch</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="tab-3" class="services-tab">
+                        <div class="container">
+                            <div class="tab-img">
+                                <img src="img/custom pics/design.jpg" alt="">
+                            </div>
+                            <div class="tab-content">
+                                <h2>03</h2>
+                                <h3>Design To Play It Safe.</h3>
+                                <p>We ignite user journeys on websites, eCommerce website, and Apps. 
+                                    Inspired by our client’s business challenges, we design and build products that are
+                                    strategically led and user centric.
+                                </p>
+                                <div class="services-btn">
+                                    <a href="#" class="btnn">Get in touch</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="tab-4" class="services-tab">
+                        <div class="container">
+                            <div class="tab-img">
+                                <img src="img/custom pics/Types-of-Web-Development-for-your-Project.jpg" alt="">
+                            </div>
+                            <div class="tab-content">
+                                <h2>04</h2>
+                                <h3>From Our Development To Yours.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, illo, expedita. 
+                                    Voluptatem, facilis. Voluptates ullam repellat nobis quisquam odit, esse obcaecati
+                                    aliquam nulla laborum veritatis sequi, impedit sunt nam.
+                                </p>
+                                <div class="services-btn">
+                                    <a href="#" class="btnn">Get in touch</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="work-section" class="mfp-fade scrollspy" spy-title="WORK">
+            <div class="page-container">
+                <div class="work-section-title wow animate__rotateInDownLeft">
+                    <h5>FIND OUT WORK</h5>
+                    <h2>Our <br> Amazing <span>Work</span></h2>
+                </div>
+
+                <div class="work-links filter-button-group wow animate__zoomIn">
+                    <button type="button" class="btnn" data-filter="*">
+                        <span>All</span>
+                    </button>
+                    <button type="button" class="btnn" data-filter=".logo">
+                        <span>Logo</span>
+                    </button>
+                    <button type="button" class="btnn" data-filter=".web">
+                        <span>Web</span>
+                    </button>
+                    <button type="button" class="btnn" data-filter=".mobile">
+                        <span>Mobile</span>
+                    </button>
+                    <button type="button" class="btnn" data-filter=".desktop">
+                        <span>Desktop</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="work-portfolio">
+                <div class="wow animate__zoomIn">
+                    <div class="work-portfolio-container" id="isotope-container">
+                        <div class="logo desktop portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/001.jpg">
+                                    <img src="img/portfolio/001.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Logo</h3>
+                                        
+                                        <span></span>
+                                        <p>Desktop, Design</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="web portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/002.jpg">
+                                    <img src="img/portfolio/002.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Photoshop</h3>
+                                        <span></span>
+                                        <p>Web Design, Illustration</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="web portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/003.jpg">
+                                    <img src="img/portfolio/003.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Web Design</h3>
+                                        <span></span>
+                                        <p>Video, web</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="logo web desktop portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/004.jpg">
+                                    <img src="img/portfolio/004.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Logo</h3>
+                                        <span></span>
+                                        <p>Desktop, Design</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="web portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/005.jpg">
+                                    <img src="img/portfolio/005.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Photoshop</h3>
+                                        <span></span>
+                                        <p>Web Design, Illustration</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/006.jpg">
+                                    <img src="img/portfolio/006.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Logo</h3>
+                                        <span></span>
+                                        <p>Desktop, Design</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="desktop portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/007.jpg">
+                                    <img src="img/portfolio/007.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Photoshop</h3>
+                                        <span></span>
+                                        <p>Web Design, Illustration</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile logo portfolio">
+                            <div class="portfolio-item">
+                                <a href="img/portfolio/008.jpg">
+                                    <img src="img/portfolio/008.jpg" alt="">
+                                    <div class="portfolio-item-overlay">
+                                        <h3>Mobile Design</h3>
+                                        <span></span>
+                                        <p>Video, web</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <Section id="testimonial-section" >
+            <div class="page-container">
+                <div class="testimonial-section-title wow animate__slideInDown">
+                    <h5>WHO WE ARE</h5>
+                    <h2>What Our <br> <span>Customers</span> Say</h2>
+                </div>
+
+                <div class="testimonial-section-content wow animate__slideInUp" id="testimonial-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-title">
+                            <h3>Our Client</h3>
+                            <div class="testimonial-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Campaign metrics are positive, and So Interactive is a highly compatible collaborator.
+                                As a boutique company, they are detail-oriented, focused on quality, and attentive.
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="img/testimonial/client-1.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <p>Joq Martin</p>
+                                <p>Senior Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-title">
+                            <h3>Our Client</h3>
+                            <div class="testimonial-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>So Interactive successfully launched the website and created a high-performing system.
+                                The relationship was successful and their team was highly professional. The design approach and
+                                team-focused attitude helped make the final product and workflow very satisfactory. 
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="img/testimonial/client-2.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <p>Joq Martin</p>
+                                <p>Senior Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-title">
+                            <h3>Our Client</h3>
+                            <div class="testimonial-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>So Interactive’s efforts were very impactful. Their team’s operational effectiveness was
+                                impressive. They worked very quickly and users were happy to use the product.
+                                Project management was brilliant. They consistently kept the customers in mind. 
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-img">
+                                <img src="img/testimonial/client-3.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <p>Joq Martin</p>
+                                <p>Senior Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div id="carouselButtons" style="text-align:center; margin-top: 1rem;" >
+                    <span class="footerdot" data-carousel='1'>
+                    </span>
+                    <span class="footerdot" data-carousel='2'>
+                    </span>
+                    <span class="footerdot" data-carousel='3'>
+                    </span>
+                </div>
+            </div>
+        </Section>
+
+
+        <section id="pricing-section">
+            <div class="page-container">
+                <div class="pricing-section-title wow animate__rotateIn">
+                    <h5>LOVELY CUSTOMERS</h5>
+                    <h2>Our Pricing</h2>
+                </div>
+
+                <div class="pricing-section-content">
+                    <div class="pricing-section-column wow animate__fadeInLeft">
+                        <div class="pricing-type">
+                            <h4>Basic</h4>
+                        </div>
+                        <hr>
+                        <div class="pricing-text">
+                            <div class="pricing-number">
+                                <div class="dollar">
+                                    <span>$</span>
+                                </div>
+                                <div class="number">
+                                    <h2>29</h2>
+                                    <span>Months</span>
+                                </div>
+                            </div>
+
+                            <div class="pricing-desc">
+                                <p>You will get all these awesome services with this great price. Get it now!</p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="pricing-properties">
+                            <ul>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Full access</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Unlimited Bandwidth</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Powerful Admin Panel</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Email Accounts</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>10 Free Web sites</li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="pricing-btn">
+                            <a href="#">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-section-column pricing-section-column-unli  unlimited wow animate__fadeInUp">
+                        <div class="pricing-type">
+                            <h4>Unlimited</h4>
+                        </div>
+                        <hr>
+                        <div class="pricing-text">
+                            <div class="pricing-number">
+                                <div class="dollar">
+                                    <span>$</span>
+                                </div>
+                                <div class="number">
+                                    <h2>57</h2>
+                                    <span>Months</span>
+                                </div>
+                            </div>
+
+                            <div class="pricing-desc">
+                                <p>You will get all these awesome services with this great price. Get it now!</p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="pricing-properties">
+                            <ul>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Full access</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Unlimited Bandwidth</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Powerful Admin Panel</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Email Accounts</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>10 Free Web sites</li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="pricing-btn">
+                            <a href="#">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-section-column wow animate__fadeInRight">
+                        <div class="pricing-type">
+                            <h4>Professional</h4>
+                        </div>
+                        <hr>
+                        <div class="pricing-text">
+                            <div class="pricing-number">
+                                <div class="dollar">
+                                    <span>$</span>
+                                </div>
+                                <div class="number">
+                                    <h2>29</h2>
+                                    <span>Months</span>
+                                </div>
+                            </div>
+
+                            <div class="pricing-desc">
+                                <p>You will get all these awesome services with this great price. Get it now!</p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="pricing-properties">
+                            <ul>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Full access</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Unlimited Bandwidth</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Powerful Admin Panel</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>Email Accounts</li>
+                                <li><i class="fa-solid fa-check fa-lg"></i>10 Free Web sites</li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="pricing-btn">
+                            <a href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="stats-section">
+            <div class="overlay-bg">
+                <div class="page-container">
+                    <div class="stats-section-title">
+                        <h5>FUN FACTS</h5>
+                        <h2>We Deliver <br> <span>Excellent</span> Services</h2>
+                    </div>
+
+                    <div class="stats-section-content">
+                        <div class="stats-section-cols">
+                            <div class="stats-section-col">
+                                <div>
+                                    <i class="fa-solid fa-bar-chart"></i>
+                                </div>
+                                <div class="counterr">
+                                    <h3 class="counter">2<span>5</span></h3>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stats-section-col">
+                                <div>
+                                    <i class="fa-solid fa-codepen"></i>
+                                </div>
+                                <div class="counterr">
+                                    <h3 class="counter">476</h3>
+                                    <p>Projects Done</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stats-section-col">
+                                <div>
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="counterr">
+                                    <h3 class="counter">115</h3>
+                                    <p>Awards Received</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stats-section-col">
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div class="counterr">
+                                    <h3 class="counter">276</h3>
+                                    <p>Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section id="clients-section" class="scrollspy" spy-title="CLIENTS">
+            <div class="page-container">
+                <div class="clients-section-title wow animate__slideInDown">
+                    <h5>SATISFIED CLIENTS</h5>
+                    <h2>Our Happy <span>Clients</span></h2>
+                </div>
+
+                <div id="clients-list" class="owl-carousel owl-theme wow animate__slideInUp">
+                    <div class="client">
+                        <img src="img/client/client-1.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/client/client-2.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/client/client-3.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/client/client-4.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/client/client-5.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/client/client-6.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/client/client-7.png" alt="">
+                    </div>
+                    <div class="client">
+                        <img src="img/client/client-8.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact-section" class="contact-section scrollspy" spy-title="CONTACT US">
+            <video id="contact-bg-video2" poster="video/solo.jpg" autoplay loop muted>
+                <source src="video/POST_011_1.mp4" type="video/mp4">
+            </video>
+            <div class="home-overlay"></div>
+            <div class="contact-title wow animate__fadeInDown">
+                <div class="contact-section-title">
+                    <h5>WHO WE ARE</h5>
+                    <h2>Get <br> In Touch</h2>
+                </div>
+                <div class="contact-section-second-title">
+                    <h3>Let's start a project.</h3>
+                    <p>Fill in your details and we'll be in touch.</p>
+                </div>
+            </div>
+            <div class="page-container">
+                <div class="contact-section-left wow animate__fadeInLeft">    
+                    <div class="contact-section-info">
+                        <div class="contact-section-info-tel">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+(55) 879 58 87 46</p>
+                        </div>
+                        <div class="contact-section-info-mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>support@solo.com</p>
+                        </div>
+                        <div class="contact-section-info-loc">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>524 Mina Street Building 05 <br> Newyork, USA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section-right wow animate__fadeInRight">
+                    <form action="#" method="post">
+                        <div class="form">
+                            <div class="form-top">
+                                <div class="input-container">
+                                    <input type="text" required="">
+                                    <label for="">*NAME</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="email" required="">
+                                    <label for="">*COMPANY EMAIL</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="tel" required="">
+                                    <label for="">*CONTACT NUMBER</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" required="">
+                                    <label for="">*COMPANY NAME</label>
+                                </div>
+                            </div>
+                            <div class="form-bottom">
+                                <div class="input-container-bottom">
+                                    <input type="text" required="">
+                                    <label for="">*TELL US ABOUT THE PROJECT</label>
+                                </div>
+                                <div class="input-container-bottom">
+                                    <input type="text" required="">
+                                    <label for="">HOW DID YOU HEAR ABOUT US?</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" id="contact-submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                SUBMIT
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="ScrollSpy/ScrollSpy.js"></script>
+        <script src="Owl Carousel/owl.carousel.min.js"></script>
+        <script src="Waypoints/jquery.waypoints.min.js"></script>
+        <script src="Responsive Tabs/jquery.responsiveTabs.min.js"></script>
+        <script src="Isotope Filtering Package/isotope.pkgd.min.js"></script>
+        <script src="Magnific Popup/jquery.magnific-popup.min.js"></script>
+        <script src="Counter-Up/jquery.counterup.min.js"></script>
+        <script src="Typed.js/typed.umd.js"></script>
+        <script src="wow.js/wow.min.js"></script>
+
+        <script type="text/javascript" src="My jQuery Project.js"></script>
+    </body>
+</html>

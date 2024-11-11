@@ -1,0 +1,64 @@
+.scrollspy-indicator-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-family: Raleway;
+}
+
+.nav-wrapper .scrollspy-indicator-container li {
+  transition: all 0.25s;
+  color: white;
+  padding-left: 5px;
+}
+
+.white-nav .scrollspy-indicator-container li{
+  transition: all 0.25s;
+  color: rgb(35, 35, 35);
+  padding-left: 5px;
+}
+
+/* .scrollspy-indicator-container li.white-nav{
+  color: rgb(46, 46, 46);
+} */
+
+.scrollspy-indicator-container li::after{
+  content: '';
+  display: block;
+  border-bottom: 2px solid #f4c613;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: 0.25s;
+}
+
+/* .scrollspy-indicator-container li.spy-active::after{
+  transform: scaleX(1);
+} */
+
+.scrollspy-indicator-container li.spy-active {
+  font-weight: bold;
+  color: #f4c613;
+  border-left: 5px solid #f4c613;
+  /*
+  * For right-to-left languages, uncomment the styles below :
+  * border-left: none;
+  * border-right: $Active_Border_Width solid $Active_Border_Color;
+  */
+}
+
+.scrollspy-indicator-container li.spy-clickable {
+  cursor: pointer;
+}
+
+.scrollspy-indicator-container li.spy-clickable:hover::after {
+  color: #f4c613;
+  transform: scaleX(1);
+}
+
+.scrollspy-indicator-container li.spy-clickable:hover{
+  color: #f4c613;
+}
+
+/*# sourceMappingURL=ScrollSpy.css.map */
